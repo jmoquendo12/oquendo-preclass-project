@@ -1,10 +1,9 @@
-
-x = 1
-
-if x > 18
-  puts "Adult"
-elsif x <= 18 && x!=0
-  puts "not adult"
-else
-  puts "I can't guess the number"
+def is_adult?(age)
+  if age >= 18
+    return 'adult'
+  else
+    return 'not adult'
+  end
 end
+
+p is_adult?(21)
